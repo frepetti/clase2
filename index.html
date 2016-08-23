@@ -198,5 +198,102 @@
 				</ul>
 			</div>
 		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Paises</td>
+					<td>Bronce</td>
+					<td>Plata</td>
+					<td>Oro</td>
+				</tr>
+				<tr>
+					<td>Argentina</td>
+					<td>5</td>
+					<td>6</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>Brasil</td>
+					<td>10</td>
+					<td>8</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>Uruguay</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>EEUU</td>
+					<td>48</td>
+					<td>62</td>
+					<td>55</td>
+				</tr>
+			</table>
+		</section>
+
+		<hr> <!--Genera una linea divisoria -->
+
+		<section>
+			<form method="post" action="enviar.php">
+				<label for="name">Nombre: </label>
+				<input name="nombre" placeholder="Ingresa tu nombre" type="texto" required>
+
+				<br> <!-- hace un salto de linea-->
+
+				<label for="correo">E-mail: </label>
+				<input name="correo" placeholder="Ingresa tu Correo" type="email" required>
+
+				<br> <!-- hace un salto de linea-->
+
+				<label for="password">Contraseña: </label>
+				<input name="password" placeholder="Ingresa tu Contraseña" type="password" required>
+
+				<br>
+
+				<label for="telefono">Telefono: </label>
+				<input name="telefono" placeholder="Ingresa tu Telefono" type="tel">
+
+				<br>
+
+				<label for="edad">Edad: </label>
+				<input name="edad" placeholder="Ingresa tu Edad" type="number" required>
+
+				<br>
+
+				<label for="edad">Mensaje: </label>
+				<textarea name="mensaje" placeholder="mensaje"></textarea>
+
+				<br>
+
+				<label for="destino">Mensaje: </label>
+				<select name="destino" required>
+					<option value="">Seleccionar destino</option> <!--Este option me va a dar como falso en el caso de que el campo select sea obligatorio (required)-->
+					<option value="CABA">Ciudad Autonoma de Buenos Aires</option>
+					<option value="BA">Buenos Aires</option>
+					<option value="ER">Entre Rios</option>
+					<option value="SF">Santa Fe</option>
+				<br>
+
+				</select>
+				<br>
+
+				<input name="entrega" type="radio" value="Delivery"><span>Delivery</span> <!-- al tener ambas etiquetas el mismo name me indica que no pueden elegirse ambas opciones -->
+
+				<br>
+
+				<input name="entrega" type="radio" value="Local"><span>Retira por el Local</span>
+
+				<br>
+
+				<label for+"cv">Curriculum</label>
+				<input  name="cv" type="file">
+
+				<br>
+
+				<input type="submit" value="Enviar Formulario">
+			</form>
+		</section>
 </body>
 </html>
